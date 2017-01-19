@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script>
+			// Load native UI library
+			var gui = require('nw.gui');
+
+			// Get the current window
+			var win = gui.Window.get();
+
+			var new_win = gui.Window.open('source/index.html', 
+				{
+				  position: 'center',
+				  width: 500,
+				  height: 2000,
+				  "inject-js-start": "js/inject.js"
+			});
+
+		</script>
+	</head>
+	<body>
+		Node-webkit page
+	</body>
+</html>
